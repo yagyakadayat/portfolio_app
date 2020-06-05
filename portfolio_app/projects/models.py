@@ -8,3 +8,5 @@ class projects(models.Model):
     summary = models.CharField(max_length=250)
     pub_date = models.DateTimeField()
 
+    def __str__(self): # show the title name
+        return self.title
